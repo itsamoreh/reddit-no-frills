@@ -187,13 +187,27 @@
     color: #F99654;
   }
   /* OP USERNAME COLOR */
-  .tagline .moderator, .green, .search-result-meta .moderator {
-    color: #7ABC84;
+  .author a, .moderator a {
+    color: #7ABC84 !important;
+    background-color: #F9F9F9 !important;
   }
   
   /* COMMENT PAGE 
   */
   
+  .entry {
+    padding-left: 5px;
+  }
+  .link .usertext-body .md {
+    border-radius: 0px;
+  }
+  .thing .tagline .author.moderator {
+    background-color: #7ABC84 !important;
+  }
+  .thing .tagline .author.moderator:hover {
+    background-color: #F9F9F9 !important;
+    color: #7ABC84 !important;
+  }
   .comment .expand {
     color: #222222;
   }
@@ -231,6 +245,9 @@
   /* OTHER 
   */
   
+  .error {
+    color: #ED6A5A;
+  }
   .searchpane {
     margin: 5px auto;
     padding: 20px;
@@ -263,6 +280,63 @@
   .fancy-toggle-button .add {
     background-image: none;
     background-color: #7ABC84;
+  }
+  
+  /* RES FEATURES */
+  /* HEADER */
+  #srList {
+    background-color: #F9F9F9;
+    border: 1px solid #69C3EA;
+  }
+  table#srList {
+    border-collapse: separate !important;
+  }
+  #srList tr:hover {
+    background-color: #F2F2F2 !important;
+  }
+  #sr-header-area a.RESShortcutsCurrentSub, #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
+    color: #F99654 !important;
+  }
+  #userbarToggle {
+    background-color: #F9F9F9;
+    border: none;
+  }
+  /* POSTS */
+  .expando-button {
+    display: none !important;
+  }
+  .NERPageMarker {
+    background-color: #F2F2F2 !important;
+  }
+  #progressIndicator {
+    background-color: #F2F2F2 !important;
+  }
+  /* COMMENT PAGE */
+  .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+    background-color: #F2F2F2 !important;
+  }
+  .RESSubscriptionButton {
+    background-color: #F9F9F9;
+    border: 1px solid #69C3EA;
+    color: #222;
+  }
+  .RESSubscriptionButton .res-icon {
+    display: none;
+  }
+  .newComments {
+    color: #F99654;
+  }
+  /* POPUPS */
+  .RESHover, .RESHover.RESDialogSmall {
+    background-color: #F9F9F9;
+    border: 1px solid #69C3EA;
+  }
+  .RESHoverTitle {
+    background-color: #F9F9F9 !important;
+  }
+  /* RES DISABLED FEATURES */
+  #RESShortcutsEditContainer {
+    display: none;
   }
   
   /* DISABLED FEATURES 

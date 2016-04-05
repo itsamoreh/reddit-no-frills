@@ -242,6 +242,16 @@
     background-color: #F2F2F2;
   }
   
+  /* SUBMIT PAGE
+  */
+  
+  .tabmenu.formtab .selected a {
+    background-color: #5F99CF !important;
+  }
+  .formtabs-content {
+    border-top: 2px solid #5F99CF !important;;
+  }
+  
   /* OTHER 
   */
   

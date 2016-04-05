@@ -139,6 +139,9 @@
     background-color: #F2F2F2;
     border: 1px solid #F0F0F0;
   }
+  .thing.stickied.link a.title {
+    color: #7ABC84;
+  }
 
   /* LINKS 
   */
@@ -254,7 +257,7 @@
   }
   .nextprev a:hover, 
   .next-suggestions a:hover {
-    border: 1px solid ##69C3EA !important;
+    border: 1px solid #69C3EA !important;
   }
   /* SUBSCRIBE BUTTONS */
   .fancy-toggle-button .add {

@@ -11,4 +11,6 @@ Make sure to turn subreddit styles off on reddit (settings > display > allow sub
 # Screenshots
 
 ![frontpage](screenshots/front.jpg)
+
+
 ![post+comment page](screenshots/post+comments.jpg)

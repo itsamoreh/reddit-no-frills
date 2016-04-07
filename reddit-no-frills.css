@@ -4,11 +4,12 @@
   
   COLORS:
   
-  BLUE:      #69C3EA;
-  ORANGE:    #F99654;
-  PURPLE:    #9C80CC;
   RED:       #ED6A5A;
+  ORANGE:    #F99654;
+  YELLOW:    #F7D56F;
   GREEN:     #7ABC84;
+  BLUE:      #69C3EA;
+  PURPLE:    #9C80CC;
   
   WHITE:     #F9F9F9;
   GRAY:      #F2F2F2;
@@ -43,6 +44,9 @@
     height: 22px;
     border-bottom: none;
     margin-bottom: 22px;
+  }
+  .flat-list li a.gold {
+    color: #F7D56F;
   }
   .tabmenu li a {
     background-color: #F9F9F9;
@@ -93,6 +97,10 @@
     background: #ED6A5A;
   }
   /* INFOBAR */
+  .reddit-infobar {
+    background-color: #F9F9F9;
+    border: 1px solid #ED6A5A;
+  }
   .reddit-infobar.with-icon {
     background-color: #F9F9F9;
     border: 1px solid #ED6A5A;
@@ -112,6 +120,25 @@
   .reddit-infobar .md p {
     margin: 0;
     color: #ED6A5A;
+  }
+  .gold-accent {
+    background-color: #F9F9F9;
+    border: 1px solid #F7D56F;
+    border-radius: 0px;
+    color: #222222 !important;
+  }
+  .gold-accent h1, .gold-accent th {
+    color: #222222 !important;
+    font-family: normal x-small verdana,arial,helvetica,sans-serif;
+  }
+  .gold-accent .pretty-form input#name[type="text"] {
+    border-radius: 0px;
+  }
+  .gold-accent .pretty-form button {
+    background-color: #F9F9F9;
+    border: 1px solid #222;
+    border-radius: 0px;
+    color: #222;
   }
   
   /* CONTENT 
@@ -183,6 +210,10 @@
   /* USERNAME COLOR ON LINKS AND COMMENTS 
   */
   
+  .tagline .submitter, .search-result-meta .submitter {
+    color: #69C3EA;
+    font-weight: 800;
+  }
   .tagline a, .search-result-meta a {
     color: #F99654;
   }
@@ -190,6 +221,19 @@
   .author a, .moderator a {
     color: #7ABC84 !important;
     background-color: #F9F9F9 !important;
+  }
+  /* ADMIN USERNAME */
+  .tagline .admin, .search-result-meta .admin {
+    color: #7ABC84;
+    font-weight: 800;
+  }
+  /* MOD USERNAME */
+  .thing .tagline .author.moderator {
+    background-color: #F9F9F9 !important;
+    color: #7ABC84 !important;
+  }
+  .tagline .moderator, .green, .search-result-meta .moderator {
+    color: #7ABC84 !important;
   }
   
   /* COMMENT PAGE 
@@ -201,18 +245,11 @@
   .link .usertext-body .md {
     border-radius: 0px;
   }
-  .thing .tagline .author.moderator {
-    background-color: #7ABC84 !important;
-  }
-  .thing .tagline .author.moderator:hover {
-    background-color: #F9F9F9 !important;
-    color: #7ABC84 !important;
-  }
   .comment .expand {
     color: #222222;
   }
   .tagline .stickied-tagline, .search-result-meta .stickied-tagline {
-    color: #7abc84;
+    color: #7ABC84;
   }
   .link .usertext-body .md {
     border: none;
@@ -227,6 +264,11 @@
   }
   .morecomments a {
     color: #69C3EA;
+  }
+  .panestack-title a.title-button.gold {
+    border: 1px solid #F7D56F;
+    border-radius: 0px;
+    background-color: #F9F9F9;
   }
   
   /* MESSAGES 

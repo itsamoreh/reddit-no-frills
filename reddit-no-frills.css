@@ -16,11 +16,73 @@
 
 */
 
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
 @-moz-document domain(reddit.com) {
   
   body {
     background-color: #F9F9F9 !important;
     color: #30292F !important;
+  }
+  
+  /* ICONS
+  */
+  
+  /* MAIL */
+  #mail,
+  #mail.havemail,
+  #mail.nohavemail {
+    display: inline;
+    top: 0px;
+    background-image: unset;
+  }
+  /* UP/DOWN VOTE ARROWS */
+  .arrow {
+    height: unset;
+    margin: 0 auto;
+  }
+  .arrow.up,
+  .arrow.upmod,
+  .arrow.down,
+  .arrow.downmod {
+    background-image: none;
+  }
+  .arrow.up:before {
+    content: "\f062";
+    font-family: FontAwesome;
+    color: #C6C6C6;
+  }
+  .arrow.upmod:before {
+    content: "\f062";
+    font-family: FontAwesome;
+    color: #F99654;
+  }
+  .arrow.down:before {
+    content: "\f063";
+    font-family: FontAwesome;
+    color: #C6C6C6;
+  }
+  .arrow.downmod:before {
+    content: "\f063";
+    font-family: FontAwesome;
+    color: #9C80CC;
+  }
+  /* UP/DOWN VOTE TEXT */
+  .link .score.likes {
+    color: #F99654;
+  }
+  .link .score.dislikes {
+    color: #9C80CC;
+  }
+  /* REDDIT GOLD */
+  .gilded-icon {
+    margin: 0 0 -10px 4px;
+  }
+  .gilded-icon::before {
+    background-image: unset;
+    content: "\f0a3";
+    font-family: FontAwesome;
+    color: #F7D56F;
   }
   
   /* HEADER 
@@ -61,6 +123,9 @@
   }
   .user .userkarma {
     color: #F99654;
+  }
+  .message-count {
+    background-color: #F99654;
   }
   
   /* SUBREDDIT DROPDOWN, BY DATE DROPDOWN 
@@ -169,6 +234,13 @@
   .thing.stickied.link a.title {
     color: #7ABC84;
   }
+  .usertext button {
+    background-color: #F9F9F9;
+    border: 1px solid #DDD;
+  }
+  .usertext button:hover {
+    border: 1px solid #69C3EA !important;
+  }
 
   /* LINKS 
   */
@@ -269,6 +341,16 @@
     border: 1px solid #F7D56F;
     border-radius: 0px;
     background-color: #F9F9F9;
+    color: #222;
+  }
+  .comment .child, .comment .showreplies {
+    border-left: 2px solid #F2F2F2;
+  }
+  /* COMMENTS */
+  .md hr {
+    height: unset;
+    color: unset;
+    border: 2px solid #F2F2F2;
   }
   
   /* MESSAGES 
@@ -278,6 +360,9 @@
     border-bottom: 1px solid #F2F2F2;
   }
   .message .tagline, .message .search-result-meta {
+    color: #7ABC84;
+  }
+  .message.new > .entry .head {
     color: #7ABC84;
   }
   .roundfield {
@@ -327,6 +412,9 @@
   .nextprev a:hover, 
   .next-suggestions a:hover {
     border: 1px solid #69C3EA !important;
+  }
+  .developed-app, .authorized-app {
+    border-radius: 0px;
   }
   /* SUBSCRIBE BUTTONS */
   .fancy-toggle-button .add {

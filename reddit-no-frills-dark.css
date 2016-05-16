@@ -1,16 +1,16 @@
 /*
   BY: AMOR KUMAR
-  
-  
+
+
   COLORS:
-  
+
   RED:       #ED6A5A;
   ORANGE:    #F99654;
   YELLOW:    #F7D56F;
   GREEN:     #7ABC84;
   BLUE:      #69C3EA;
   PURPLE:    #9C80CC;
-  
+
   WHITE:     #F9F9F9;
   GRAY:      #F2F2F2;
   LIGHTGRAY: #DDD;
@@ -20,15 +20,15 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
 @-moz-document domain(reddit.com) {
-  
+
   body {
     background-color: #F9F9F9 !important;
     color: #30292F !important;
   }
-  
+
 /* ICONS
  */
-  
+
   /* MAIL */
   #mail,
   #mail.havemail,
@@ -85,10 +85,10 @@
     font-family: FontAwesome;
     color: #F7D56F;
   }
-  
+
 /* HEADER
  */
-  
+
   body.with-listing-chooser #header .pagename {
     position: relative;
     bottom: 0px;
@@ -131,10 +131,10 @@
   .message-count {
     background-color: #F99654;
   }
-  
+
 /* SUBREDDIT DROPDOWN, BY DATE DROPDOWN
  */
-  
+
   .drop-choices a.choice:hover {
     background-color: #F2F2F2 !important;
   }
@@ -143,10 +143,10 @@
     background-color: #F9F9F9;
     border: 1px solid #69C3EA;
   }
-  
+
 /* TOP INFO BOXES
  */
-  
+
   /* LIVE THREAD BOX */
   .happening-now-wrap .rank-spacer, .happening-now-wrap .midcol-spacer {
     display: none;
@@ -209,19 +209,19 @@
     border-radius: 0px;
     color: #222;
   }
-  
+
 /* CONTENT
  */
-  
+
   .content {
     max-width: 900px !important;
     margin: 10px auto !important;
     padding: 5px 20px;
   }
-  
+
 /* POSTS
  */
-  
+
   .midcol {
     margin-left: 0px;
   }
@@ -248,7 +248,7 @@
 
 /* LINKS
  */
-  
+
   .link {
     margin: 20px auto !important;
   }
@@ -282,10 +282,10 @@
   .expando-button {
     display: none;
   }
-  
+
 /* USERNAME COLOR ON LINKS AND COMMENTS
  */
-  
+
   .tagline .submitter, .search-result-meta .submitter {
     color: #69C3EA;
     font-weight: 800;
@@ -311,10 +311,10 @@
   .tagline .moderator, .green, .search-result-meta .moderator {
     color: #7ABC84 !important;
   }
-  
+
 /* COMMENT PAGE
  */
-  
+
   .entry {
     padding-left: 5px;
   }
@@ -361,10 +361,10 @@
     color: unset;
     border: 2px solid #F2F2F2;
   }
-  
+
 /* MESSAGES
  */
-  
+
   .menuarea {
     border-bottom: 1px solid #F2F2F2;
   }
@@ -377,20 +377,20 @@
   .roundfield {
     background-color: #F2F2F2;
   }
-  
+
 /* SUBMIT PAGE
  */
-  
+
   .tabmenu.formtab .selected a {
     background-color: #5F99CF !important;
   }
   .formtabs-content {
     border-top: 2px solid #5F99CF !important;;
   }
-  
+
 /* OTHER
  */
-  
+
   .error {
     color: #ED6A5A;
   }
@@ -414,11 +414,11 @@
     margin: 0 auto;
     margin-bottom: 22px;
   }
-  .nextprev a, 
+  .nextprev a,
   .next-suggestions a {
     background: #F9F9F9 !important;
   }
-  .nextprev a:hover, 
+  .nextprev a:hover,
   .next-suggestions a:hover {
     border: 1px solid #69C3EA !important;
   }
@@ -430,7 +430,7 @@
     background-image: none;
     background-color: #7ABC84;
   }
-  
+
 /* RES FEATURES
  */
 
@@ -489,16 +489,16 @@
   #RESShortcutsEditContainer {
     display: none;
   }
-  
+
 /* DISABLED FEATURES
  */
-  
+
   /* MULTI HOVER */
   .hover-bubble.multi-selector {
     display: none !important;
   }
   /* SIMPLIFY TOP BAR */
-  .sr-list > span:nth-child(2), 
+  .sr-list > span:nth-child(2),
   ul.sr-bar:nth-child(3),
   #sr-more-link {
     display: none;
@@ -512,7 +512,7 @@
     display: none;
   }
   /* FOOTER */
-  .footer-parent, 
+  .footer-parent,
   .debuginfo {
     display: none;
   }

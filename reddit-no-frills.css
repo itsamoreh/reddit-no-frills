@@ -507,9 +507,12 @@
   .organic-listing {
     display: none;
   }
-  /* SIDEBAR */
-  .side {
+  /* SIDEBAR SANS SEARCH BOX */
+  .side > :not(:first-child) {
     display: none;
+  }
+  .side {
+    background-color: inherit;
   }
   /* FOOTER */
   .footer-parent, 

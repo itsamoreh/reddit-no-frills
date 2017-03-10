@@ -3,8 +3,6 @@
  *
  */
 
-@-moz-document domain("reddit.com") {
-
 body {
     background-color: #F9F9F9 !important;
     color: #30292F !important;
@@ -525,6 +523,4 @@ ul.sr-bar:nth-child(3) {
 /* MULTIREDDIT BAR */
 body.with-listing-chooser.listing-chooser-collapsed .listing-chooser {
   display: none;
-}
-
 }

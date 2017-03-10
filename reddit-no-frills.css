@@ -9,22 +9,22 @@ body {
     background-color: #F9F9F9 !important;
     color: #30292F !important;
 }
-	
-/* 
- * HEADER 
+
+/*
+ * HEADER
  *
  */
 
 body.with-listing-chooser #header .pagename {
   position: relative;
-  bottom: 0px;
+  bottom: 0;
 }
 
 #header {
-  background-color: #F9F9F9;
-  max-width: 900px !important;
   margin: 0 auto;
+  max-width: 900px !important;
   border-bottom: 1px solid #69C3EA;
+  background-color: #F9F9F9;
 }
 
 #header-img.default-header {
@@ -32,10 +32,10 @@ body.with-listing-chooser #header .pagename {
 }
 
 #sr-header-area {
-  background-color: #F9F9F9;
+  margin-bottom: 22px;
   height: 22px;
   border-bottom: none;
-  margin-bottom: 22px;
+  background-color: #F9F9F9;
 }
 
 .flat-list li a.gold {
@@ -47,9 +47,9 @@ body.with-listing-chooser #header .pagename {
 }
 
 .tabmenu li.selected a {
-  background-color: #F9F9F9;
   border-color: #69C3EA;
   border-bottom-color: #F9F9F9;
+  background-color: #F9F9F9;
 }
 
 #header-bottom-right {
@@ -60,8 +60,8 @@ body.with-listing-chooser #header .pagename {
   color: #F99654;
 }
 
-/* 
- * SUBREDDIT DROPDOWN, BY DATE DROPDOWN 
+/*
+ * SUBREDDIT DROPDOWN, BY DATE DROPDOWN
  *
  */
 
@@ -69,14 +69,14 @@ body.with-listing-chooser #header .pagename {
   background-color: #F2F2F2 !important;
 }
 
-#sr-header-area .drop-choices.srdrop,
-.drop-choices {
-  background-color: #F9F9F9;
+.drop-choices,
+#sr-header-area .drop-choices.srdrop {
   border: 1px solid #69C3EA;
+  background-color: #F9F9F9;
 }
 
-/* 
- * TOP INFO BOXES 
+/*
+ * TOP INFO BOXES
  *
  */
 
@@ -94,8 +94,8 @@ body.with-listing-chooser #header .pagename {
 }
 
 .happening-now {
-  background-color: #F9F9F9;
   border: 1px solid #84CC8F;
+  background-color: #F9F9F9;
   color: #7ABC84;
 }
 
@@ -105,13 +105,13 @@ body.with-listing-chooser #header .pagename {
 
 /* INFOBAR */
 .reddit-infobar {
-  background-color: #F9F9F9;
   border: 1px solid #ED6A5A;
+  background-color: #F9F9F9;
 }
 
 .reddit-infobar.with-icon {
-  background-color: #F9F9F9;
   border: 1px solid #ED6A5A;
+  background-color: #F9F9F9;
 }
 
 .archived-infobar.with-icon::before {
@@ -124,9 +124,9 @@ body.with-listing-chooser #header .pagename {
 }
 
 .reddit-infobar .md {
-  text-align: center;
-  max-width: 100%;
   margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
 }
 
 .reddit-infobar .md p {
@@ -135,9 +135,9 @@ body.with-listing-chooser #header .pagename {
 }
 
 .gold-accent {
-  background-color: #F9F9F9;
   border: 1px solid #F7D56F;
-  border-radius: 0px;
+  border-radius: 0;
+  background-color: #F9F9F9;
   color: #222222 !important;
 }
 
@@ -147,34 +147,34 @@ body.with-listing-chooser #header .pagename {
 }
 
 .gold-accent .pretty-form input#name[type="text"] {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .gold-accent .pretty-form button {
-  background-color: #F9F9F9;
   border: 1px solid #222;
-  border-radius: 0px;
+  border-radius: 0;
+  background-color: #F9F9F9;
   color: #222;
 }
 
-/* 
- * CONTENT 
+/*
+ * CONTENT
  *
  */
 
 .content {
-  max-width: 900px !important;
   margin: 10px auto !important;
   padding: 5px 20px;
+  max-width: 900px !important;
 }
 
-/* 
- * POSTS 
+/*
+ * POSTS
  *
  */
 
 .midcol {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .link .rank {
@@ -186,16 +186,16 @@ body.with-listing-chooser #header .pagename {
 }
 
 .md code, .md pre {
-  background-color: #F2F2F2;
   border: 1px solid #F0F0F0;
+  background-color: #F2F2F2;
 }
 
 .thing.stickied.link a.title {
   color: #7ABC84;
 }
 
-/* 
- * LINKS 
+/*
+ * LINKS
  *
  */
 
@@ -243,28 +243,32 @@ a {
   display: none;
 }
 
-/* 
- * USERNAME COLOR ON LINKS AND COMMENTS 
+/*
+ * USERNAME COLOR ON LINKS AND COMMENTS
  *
  */
 
-.tagline .submitter, .search-result-meta .submitter {
+.tagline .submitter,
+.search-result-meta .submitter {
   color: #69C3EA;
   font-weight: 800;
 }
 
-.tagline a, .search-result-meta a {
+.tagline a,
+.search-result-meta a {
   color: #F99654;
 }
 
 /* OP USERNAME COLOR */
-.author a, .moderator a {
-  color: #7ABC84 !important;
+.author a,
+.moderator a {
   background-color: #F9F9F9 !important;
+  color: #7ABC84 !important;
 }
 
 /* ADMIN USERNAME */
-.tagline .admin, .search-result-meta .admin {
+.tagline .admin,
+.search-result-meta .admin {
   color: #7ABC84;
   font-weight: 800;
 }
@@ -275,13 +279,15 @@ a {
   color: #7ABC84 !important;
 }
 
-.tagline .moderator, .green, .search-result-meta .moderator {
+.green,
+.tagline .moderator,
+.search-result-meta .moderator {
   color: #7ABC84 !important;
 }
 
-/* 
- * COMMENT PAGE 
- * 
+/*
+ * COMMENT PAGE
+ *
  */
 
 .entry {
@@ -289,14 +295,15 @@ a {
 }
 
 .link .usertext-body .md {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .comment .expand {
   color: #222222;
 }
 
-.tagline .stickied-tagline, .search-result-meta .stickied-tagline {
+.tagline .stickied-tagline,
+.search-result-meta .stickied-tagline {
   color: #7ABC84;
 }
 
@@ -309,9 +316,9 @@ a {
 }
 
 textarea {
+  border: 1px solid #5F99CF;
   background-color: #F9F9F9;
   color: #30292F;
-  border: 1px solid #5F99CF;
 }
 
 .morecomments a {
@@ -320,12 +327,12 @@ textarea {
 
 .panestack-title a.title-button.gold {
   border: 1px solid #F7D56F;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #F9F9F9;
 }
 
-/* 
- * MESSAGES 
+/*
+ * MESSAGES
  *
  */
 
@@ -333,7 +340,8 @@ textarea {
   border-bottom: 1px solid #F2F2F2;
 }
 
-.message .tagline, .message .search-result-meta {
+.message .tagline,
+.message .search-result-meta {
   color: #7ABC84;
 }
 
@@ -341,7 +349,7 @@ textarea {
   background-color: #F2F2F2;
 }
 
-/* 
+/*
  * SUBMIT PAGE
  *
  */
@@ -354,9 +362,9 @@ textarea {
   border-top: 2px solid #5F99CF !important;;
 }
 
-/* 
- * OTHER 
- * 
+/*
+ * OTHER
+ *
  */
 
 .error {
@@ -366,9 +374,9 @@ textarea {
 .searchpane {
   margin: 5px auto;
   padding: 20px;
+  border: 1px solid #5F99CF;
   background: #F9F9F9;
   background-image: none;
-  border: 1px solid #5F99CF;
 }
 
 .raisedbox h4 {
@@ -381,37 +389,37 @@ textarea {
 }
 
 .infobar {
-  background-color: #F9F9F9;
-  border: 1px solid #F99654;
   margin: 0 auto;
   margin-bottom: 22px;
+  border: 1px solid #F99654;
+  background-color: #F9F9F9;
 }
 
-.nextprev a, 
+.nextprev a,
 .next-suggestions a {
   background: #F9F9F9 !important;
 }
 
-.nextprev a:hover, 
+.nextprev a:hover,
 .next-suggestions a:hover {
   border: 1px solid #69C3EA !important;
 }
 
 /* SUBSCRIBE BUTTONS */
 .fancy-toggle-button .add {
-  background-image: none;
   background-color: #7ABC84;
+  background-image: none;
 }
 
 /*
- * RES FEATURES 
- * 
+ * RES FEATURES
+ *
  */
 
 /* HEADER */
 #srList {
-  background-color: #F9F9F9;
   border: 1px solid #69C3EA;
+  background-color: #F9F9F9;
 }
 
 table#srList {
@@ -422,13 +430,14 @@ table#srList {
   background-color: #F2F2F2 !important;
 }
 
-#sr-header-area a.RESShortcutsCurrentSub, #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
+#sr-header-area a.RESShortcutsCurrentSub,
+#RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
   color: #F99654 !important;
 }
 
 #userbarToggle {
-  background-color: #F9F9F9;
   border: none;
+  background-color: #F9F9F9;
 }
 
 /* POSTS */
@@ -445,13 +454,14 @@ table#srList {
 }
 
 /* COMMENT PAGE */
-.RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+.RES-keyNav-activeElement,
+.RES-keyNav-activeElement .md-container {
   background-color: #F2F2F2 !important;
 }
 
 .RESSubscriptionButton {
-  background-color: #F9F9F9;
   border: 1px solid #69C3EA;
+  background-color: #F9F9F9;
   color: #222;
 }
 
@@ -464,9 +474,10 @@ table#srList {
 }
 
 /* POPUPS */
-.RESHover, .RESHover.RESDialogSmall {
-  background-color: #F9F9F9;
+.RESHover,
+.RESHover.RESDialogSmall {
   border: 1px solid #69C3EA;
+  background-color: #F9F9F9;
 }
 
 .RESHoverTitle {
@@ -478,8 +489,8 @@ table#srList {
   display: none;
 }
 
-/* 
- * DISABLED FEATURES 
+/*
+ * DISABLED FEATURES
  *
  */
 
@@ -489,9 +500,9 @@ table#srList {
 }
 
 /* SIMPLIFY TOP BAR */
-.sr-list > span:nth-child(2), 
-ul.sr-bar:nth-child(3),
-#sr-more-link {
+#sr-more-link,
+.sr-list > span:nth-child(2),
+ul.sr-bar:nth-child(3) {
   display: none;
 }
 
@@ -506,8 +517,8 @@ ul.sr-bar:nth-child(3),
 }
 
 /* FOOTER */
-.footer-parent, 
-.debuginfo {
+.debuginfo,
+.footer-parent {
   display: none;
 }
 

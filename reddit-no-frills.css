@@ -1,11 +1,32 @@
 /*
- * BY: AMOR KUMAR -- amorkumar.com
+ * THEME BY: AMOR KUMAR -- amorkumar.com
+ *
+ * SIDEBAR FROM: Reddit Stilig Mod -- https://userstyles.org/styles/88599/reddit-stilig-mod
+ *
+ * COLORS:
+ * RED:       #ED6A5A;
+ * ORANGE:    #F99654;
+ * YELLOW:    #F7D56F;
+ * GREEN:     #7ABC84;
+ * BLUE:      #69C3EA;
+ * PURPLE:    #9C80CC;
+ *
+ * WHITE:     #F9F9F9;
+ * GRAY:      #F2F2F2;
+ * LIGHTGRAY: #DDD;
  *
  */
 
 body {
-    background-color: #F9F9F9 !important;
-    color: #30292F !important;
+  background-color: #F9F9F9 !important;
+  color: #30292F !important;
+}
+
+input,
+textarea {
+  border: 1px solid #69C3EA;
+  color: #30292F;
+  background-color: #F9F9F9 !important;
 }
 
 /*
@@ -56,6 +77,58 @@ body.with-listing-chooser #header .pagename {
 
 .user .userkarma {
   color: #F99654;
+}
+
+/*
+ * SIDEBAR
+ *
+ */
+
+.side {
+  position: fixed !important;
+  top: 30px !important;
+  right: -400px !important;
+  z-index: 1000 !important;
+  float: right !important;
+  overflow-y:auto !important;
+  padding: 10px 20px 10px 10px !important;
+  width: 300px !important;
+  height:100% !important;
+  border: 0px solid #888 !important;
+  background: #F9F9F9 !important;
+  box-shadow: rgba(0,0,0,0.25) 0 0 5px !important;
+  transition-duration:0.4s !important;
+}
+
+.side::before {
+  position: fixed !important;
+  top: -3px !important;
+  right: 0% !important;
+  z-index: 5;
+  margin-right: 0px !important;
+  padding-top: 8px !important;
+  padding-right: 5px !important;
+  padding-left: 0px !important;
+  min-width: 30px !important;
+  max-width: 30px !important;
+  height: 27px !important;
+  background: transparent!important;
+  color: #aaa;
+  content: "◨";
+  text-align: center !important;
+  font-size: 14px !important;
+  transition: 0.5s color ease;
+}
+
+.side:hover::before {
+  background: #F9F9F9 !important;
+  color:#888;
+  transition: 0.5s color ease;
+}
+
+.side:hover {
+  position: fixed !important;
+  right: -20px !important;
 }
 
 /*
@@ -171,7 +244,13 @@ body.with-listing-chooser #header .pagename {
  *
  */
 
+.link {
+  margin: 20px auto !important;
+  padding: 3px !important;
+}
+
 .midcol {
+  margin-top: 0;
   margin-left: 0;
 }
 
@@ -197,16 +276,8 @@ body.with-listing-chooser #header .pagename {
  *
  */
 
-.link {
-  margin: 20px auto !important;
-}
-
 a {
   color: #69C3EA;
-}
-
-.midcol {
-  margin-top: 5px;
 }
 
 .thumbnail {
@@ -313,12 +384,6 @@ a {
   border-bottom: none;
 }
 
-textarea {
-  border: 1px solid #5F99CF;
-  background-color: #F9F9F9;
-  color: #30292F;
-}
-
 .morecomments a {
   color: #69C3EA;
 }
@@ -340,7 +405,7 @@ textarea {
 
 .message .tagline,
 .message .search-result-meta {
-  color: #7ABC84;
+  color: #888;
 }
 
 .roundfield {
@@ -407,6 +472,39 @@ textarea {
 .fancy-toggle-button .add {
   background-color: #7ABC84;
   background-image: none;
+}
+
+/*
+ * DISABLED FEATURES
+ *
+ */
+
+/* MULTI HOVER */
+.hover-bubble.multi-selector {
+  display: none !important;
+}
+
+/* SIMPLIFY TOP BAR */
+#sr-more-link,
+.sr-list > span:nth-child(2),
+ul.sr-bar:nth-child(3) {
+  display: none;
+}
+
+/* TOP AD */
+.organic-listing {
+  display: none;
+}
+
+/* FOOTER */
+.debuginfo,
+.footer-parent {
+  display: none;
+}
+
+/* MULTIREDDIT BAR */
+body.with-listing-chooser.listing-chooser-collapsed .listing-chooser {
+  display: none;
 }
 
 /*
@@ -484,43 +582,5 @@ table#srList {
 
 /* RES DISABLED FEATURES */
 #RESShortcutsEditContainer {
-  display: none;
-}
-
-/*
- * DISABLED FEATURES
- *
- */
-
-/* MULTI HOVER */
-.hover-bubble.multi-selector {
-  display: none !important;
-}
-
-/* SIMPLIFY TOP BAR */
-#sr-more-link,
-.sr-list > span:nth-child(2),
-ul.sr-bar:nth-child(3) {
-  display: none;
-}
-
-/* TOP AD */
-.organic-listing {
-  display: none;
-}
-
-/* SIDEBAR */
-.side {
-  display: none;
-}
-
-/* FOOTER */
-.debuginfo,
-.footer-parent {
-  display: none;
-}
-
-/* MULTIREDDIT BAR */
-body.with-listing-chooser.listing-chooser-collapsed .listing-chooser {
   display: none;
 }

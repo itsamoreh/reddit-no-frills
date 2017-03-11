@@ -4,6 +4,7 @@
  * SIDEBAR FROM: Reddit Stilig Mod -- https://userstyles.org/styles/88599/reddit-stilig-mod
  *
  * COLORS:
+ *
  * RED:       #ED6A5A;
  * ORANGE:    #F99654;
  * YELLOW:    #F7D56F;
@@ -12,8 +13,10 @@
  * PURPLE:    #9C80CC;
  *
  * WHITE:     #F9F9F9;
- * GRAY:      #F2F2F2;
- * LIGHTGRAY: #DDD;
+ * LIGHTGRAY: #F2F2F2;
+ * GRAY:      #DDDDDD;
+ * DARKGRAY:  #888888;
+ * BLACK:     #222222;
  *
  */
 
@@ -94,9 +97,8 @@ body.with-listing-chooser #header .pagename {
   padding: 10px 20px 10px 10px !important;
   width: 300px !important;
   height:100% !important;
-  border: 0px solid #888 !important;
+  border: 1px solid #69C3EA !important;
   background: #F9F9F9 !important;
-  box-shadow: rgba(0,0,0,0.25) 0 0 5px !important;
   transition-duration:0.4s !important;
 }
 
@@ -111,9 +113,9 @@ body.with-listing-chooser #header .pagename {
   padding-left: 0px !important;
   min-width: 30px !important;
   max-width: 30px !important;
-  height: 27px !important;
+  height: 25px !important;
   background: transparent!important;
-  color: #aaa;
+  color: #888888;
   content: "◨";
   text-align: center !important;
   font-size: 14px !important;
@@ -122,13 +124,50 @@ body.with-listing-chooser #header .pagename {
 
 .side:hover::before {
   background: #F9F9F9 !important;
-  color:#888;
+  color: #888888;
+  border-bottom: 1px solid #69C3EA !important;
   transition: 0.5s color ease;
 }
 
 .side:hover {
   position: fixed !important;
   right: -20px !important;
+}
+
+/* BUTTONS */
+.morelink {
+  background-image: none !important;
+  border-color: #69C3EA;
+  background-color: #F9F9F9;
+}
+
+.morelink .nub {
+  display: none !important;
+}
+
+.morelink a {
+  color: #69C3EA;
+}
+
+.morelink:hover,
+.mlh {
+  color: #F9F9F9;
+  background-color: #69C3EA;
+}
+
+/* SIDEBOX CREATE BOX */
+.sidebox.create .spacer {
+  background: #F9F9F9;
+}
+
+/* SIDEBOX BOXES */
+.sidecontentbox .content {
+  border: 1px solid #69C3EA;
+}
+
+/* SIDEBOX OTHER */
+.md hr {
+  background: #69C3EA !important;
 }
 
 /*
@@ -222,10 +261,10 @@ body.with-listing-chooser #header .pagename {
 }
 
 .gold-accent .pretty-form button {
-  border: 1px solid #222;
+  border: 1px solid #222222;
   border-radius: 0;
   background-color: #F9F9F9;
-  color: #222;
+  color: #222222;
 }
 
 /*
@@ -405,7 +444,7 @@ a {
 
 .message .tagline,
 .message .search-result-meta {
-  color: #888;
+  color: #888888;
 }
 
 .roundfield {
@@ -418,11 +457,11 @@ a {
  */
 
 .tabmenu.formtab .selected a {
-  background-color: #5F99CF !important;
+  background-color: #69C3EA !important;
 }
 
 .formtabs-content {
-  border-top: 2px solid #5F99CF !important;;
+  border-top: 2px solid #69C3EA !important;;
 }
 
 /*
@@ -437,7 +476,7 @@ a {
 .searchpane {
   margin: 5px auto;
   padding: 20px;
-  border: 1px solid #5F99CF;
+  border: 1px solid #69C3EA;
   background: #F9F9F9;
   background-image: none;
 }
@@ -448,7 +487,7 @@ a {
 
 #search input[type="text"] {
   width: 100%;
-  border: 1px solid #5F99CF;
+  border: 1px solid #69C3EA;
 }
 
 .infobar {
@@ -558,7 +597,7 @@ table#srList {
 .RESSubscriptionButton {
   border: 1px solid #69C3EA;
   background-color: #F9F9F9;
-  color: #222;
+  color: #222222;
 }
 
 .RESSubscriptionButton .res-icon {

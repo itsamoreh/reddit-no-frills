@@ -348,7 +348,7 @@ a {
 }
 
 .expando-button {
-  display: none;
+  float: right;
 }
 
 /*
@@ -576,10 +576,6 @@ table#srList {
 }
 
 /* POSTS */
-.expando-button {
-  display: none !important;
-}
-
 .NERPageMarker {
   background-color: #F2F2F2 !important;
 }
